@@ -1,0 +1,96 @@
+
+.page-header{
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    color: black;
+   
+    padding: 0 10vw;
+    flex-direction: column;
+}
+
+.header-text{
+    font-size: 1.5vw;
+    width: 100%;
+    transform: translateY(-60%);
+    height: 200px;
+}
+
+.scroll-container{
+    top: 230px;
+    height: 100px;
+    position: relative;
+    opacity: 0;
+    animation: fadeIn 1.5s 4s forwards ease-in;
+}
+.scroll-container span{
+    position: absolute;
+    top: 20%;
+    left: 1%;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all .2s ease-in-out;
+}
+.scroll-container span:hover{
+    transform: scale(1.05);
+    font-weight: 600;
+    cursor: pointer;
+}
+.scroll-container::before, .scroll-container::after {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    border: 2px solid transparent;
+    width: 0;
+    height: 0;
+    
+}
+
+.scroll-container::before {
+    top: 0;
+    left: 0;
+    border-left-color: red;
+    animation: border 1s infinite linear;
+}
+
+.scroll-container::after {
+    bottom: 0;
+    left: 0;
+    border-left-color: rgb(184, 184, 184);
+    height: 100%;
+    z-index: -1;
+}
+
+@keyframes border {
+    0% {
+      height: 0;
+      top:0;
+    }
+    25% {
+      height: 25%;
+      top:25px;
+    }
+    50% {
+      top:50px;
+      height: 30%;
+    }
+    75% {
+      top: 75px;
+      height: 30%;
+    }
+    100% {        
+      top:100px;
+      height: 0;
+    }
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100%{
+        opacity: 100%;
+        transform: translateY(0);
+    }
+}

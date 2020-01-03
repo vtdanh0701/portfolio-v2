@@ -6,7 +6,7 @@ import UpdatedComponent from '../Component/withLoading';
 const AboutPage = ({isLoading})=>{
     return(
         <div>
-            {isLoading ? <LoadingPage/> : <div>Hello About Page</div>}
+            {isLoading ? <LoadingPage/> : <div className='about-page'>Hello About Page</div>}
         </div>
     )
 }
