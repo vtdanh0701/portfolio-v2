@@ -1,0 +1,42 @@
+.project-card{
+  height: 30vh;
+  overflow: hidden;
+  position: relative;
+}
+.img-box, .detail, .img-box  img{
+  width: 100%;
+  height: 100%;
+}
+
+.project-card .img-box{
+  position: relative;
+}
+.project-card .img-box img{
+  transition: transform .4s ;
+}
+.project-card:hover .img-box img{
+  transform: rotate(2deg) scale(1.15);
+}
+
+.project-card .detail{
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all .1s ease-in-out;
+}
+.project-card .detail .content{
+  position: absolute;
+  top: -30%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  transition: all .4s;
+}
+.project-card:hover .detail{
+  background-color: rgba(255, 255, 255, .6);
+}
+.project-card:hover .detail .content{
+  top: 50%;
+  transform: translateY(-50%);
+}
