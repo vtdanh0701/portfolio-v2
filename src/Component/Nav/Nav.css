@@ -1,0 +1,10 @@
+.nav-bar{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 50px;
+    background-color: rgba(0, 0, 0, .9);
+    color: rgba(255, 255, 255, .5);
+    align-items: center;
+    display: flex;
+}
