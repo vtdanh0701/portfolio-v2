@@ -11,6 +11,7 @@
     
 }
 .link-container{
+    min-width: 100px;
     width: 10%;
     display: flex;
     justify-content: space-between;
