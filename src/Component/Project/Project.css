@@ -7,7 +7,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 92vh;
+    min-height: 92vh;
 }
 
 .project-header{
@@ -22,9 +22,25 @@
     width: 55%;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .project-card-container>div{
     flex: 0 50% ;
     box-sizing: border-box;
 }
+@media only screen and (max-width: 600px){
+    .project-container{
+        padding: 0 ;
+        margin: 0;
+        justify-content: center;
+    }
+    .project-card-container{
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+    }
+    .project-card{
+        width: 100%;
+    }
+  }

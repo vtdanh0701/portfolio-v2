@@ -11,7 +11,7 @@ const Project = () => {
             <div className='project-header'>
                 PROJECTS
             </div>
-            {/* {logos.map(e=><img src={e.src}/>)} */}
+            
             <div className='project-card-container'>
                 <ProjectCard image={images.project4} 
                              title='Zero Bug - Bug Tracking System'
