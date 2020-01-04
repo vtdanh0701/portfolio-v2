@@ -3,7 +3,8 @@ import LoadingPage from '../Page/LoadingPage';
 import UpdatedComponent from '../Component/withLoading';
 import Header from '../Component/Header/Header';
 import Project from '../Component/Project/Project';
-import './HomePage.css'
+import Footer from '../Component/Footer/Footer';
+
 
 const HomePage = ({isLoading}) => {
    
@@ -13,6 +14,7 @@ const HomePage = ({isLoading}) => {
                 <div className='home-page'>
                     <Header/>
                     <Project/>
+                    <Footer/>
                 </div>
             }
         </>

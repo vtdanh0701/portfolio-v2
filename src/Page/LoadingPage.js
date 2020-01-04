@@ -4,7 +4,7 @@ import './LoadingPage.css'
 const LoadingPage = ()=>{
     return(
         <div className='loading-page'>
-            Loading Page ......
+            <div className="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
         </div>
     )
 }
