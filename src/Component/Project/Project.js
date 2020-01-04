@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import ProjectCard from './ProjectCard';
 import './Project.css'
 import * as images from '../../images/project_img/index';

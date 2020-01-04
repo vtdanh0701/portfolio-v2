@@ -5,7 +5,7 @@ const AboutMe = ()=>{
     return(
         <div className='about-me'>
             <span>About Me</span>
-            <img src={profileImg}/>
+            <img src={profileImg} alt='profile'/>
             <div className='about-me-detail-container'>
                 <p>
                     <span id='about-highlight'>I am a developer who enjoys working in front-end development but also gets a kick out of back-end development. </span>
