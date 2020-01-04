@@ -21,7 +21,7 @@
     height: 100px;
     position: relative;
     opacity: 0;
-    animation: fadeIn 1.5s 4s forwards ease-in;
+   
 }
 .scroll-container span{
     position: absolute;
@@ -81,16 +81,5 @@
     100% {        
       top:100px;
       height: 0;
-    }
-}
-
-@keyframes fadeIn {
-    0%{
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    100%{
-        opacity: 100%;
-        transform: translateY(0);
     }
 }
