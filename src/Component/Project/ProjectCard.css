@@ -35,7 +35,7 @@
   transition: all .3s ease-in-out;
 }
 .project-card:hover .detail{
-  background-color: rgba(255, 255, 255, .85);
+  background-color: rgba(255, 255, 255);
 }
 .project-card:hover .detail .content{
   top: 50%;

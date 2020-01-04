@@ -1,0 +1,74 @@
+.footer{
+    height: 25vh;
+    background-color: black;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .8em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-email-container{
+    width: 53%;
+    height: 80%;
+    padding-top: 4em;
+    box-sizing: border-box;
+}
+.footer span{
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.808);
+    letter-spacing: .2em;
+}
+.contact-email{
+    border-top: 1px dotted white;
+    width: 400px;
+    margin: 1em 0;
+    padding: 1em 0;
+    color: rgba(255, 255, 255, 0.508);
+    letter-spacing: .1em;
+}
+.footer-social{
+    color: white;
+    border-top: 1.5px solid rgba(255, 255, 255, 0.151);
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;
+    padding: 0 22vw;
+    box-sizing: border-box;
+}
+.footer-social a{
+    color: rgba(255, 255, 255, 0.651);
+    margin: 5px;
+    font-size: 1rem
+}
+.footer-social a:hover{
+    color: white;
+}
+
+.go-up{
+    color: rgba(255, 255, 255, 0.473);
+    position: absolute;
+    bottom: 10px;
+    font-size: 1rem;
+}
+.go-up:hover{
+    color: white;
+    cursor: pointer;
+    animation: bouncing .7s ease-in-out infinite;
+}
+@keyframes bouncing{
+    0%{
+        bottom: 10px;
+    } 25%{
+        bottom: 11px;
+    } 50%{
+        bottom: 15px;
+    } 75%{
+        bottom: 11px;
+    } 100%{
+        bottom: 10px
+    }
+}

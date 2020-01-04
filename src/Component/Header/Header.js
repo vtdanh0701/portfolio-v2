@@ -1,6 +1,7 @@
-import React, {useState,useEffect} from 'react'; 
+import React from 'react'; 
 import './Header.css';
 import Typing from 'react-typing-animation';
+import {Link} from 'react-scroll'
 
 const Header = ()=>{  
     return(
@@ -12,7 +13,11 @@ const Header = ()=>{
                 </Typing>
             </div>
             <div className='scroll-container'>
-                <span>Scroll Down</span>
+                <Link to='project-container'
+                      duration={500} 
+                      smooth={true}>
+                        <span>Scroll Down</span>
+                </Link>
             </div>
         </div>
     )

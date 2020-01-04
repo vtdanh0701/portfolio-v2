@@ -12,16 +12,14 @@ function App() {
   return (
     <div className="App">
       <Router>
-
         <Nav/>
-        
         <Route exact path='/'>
           <HomePage/>
         </Route>
         <Route path='/about'>
           <AboutPage/>
         </Route>
-        
+        <Footer/>
       </Router>
     </div>
   );
