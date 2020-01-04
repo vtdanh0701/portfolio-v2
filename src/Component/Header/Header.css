@@ -1,12 +1,13 @@
 
 .page-header{
-    height: calc(100vh - 100px);
+    height: 80vh;
     display: flex;
     justify-content: center;
     color: black;
-    
+    position: relative;
     padding: 0 10vw;
     flex-direction: column;
+    
 }
 
 .header-text{
@@ -17,19 +18,19 @@
 }
 
 .scroll-container{
-    top: 230px;
-    height: 100px;
-    position: relative;
+    bottom: 5%;
+    height: 10vh;
+    position: absolute;
     opacity: 0;
-   
+    padding: 2em;
+    box-sizing: border-box;
 }
 .scroll-container span{
-    position: absolute;
-    top: 20%;
-    left: 1%;
+    
     text-transform: uppercase;
     font-weight: 600;
     transition: all .2s ease-in-out;
+    
 }
 .scroll-container span:hover{
     transform: scale(1.05);
@@ -68,18 +69,18 @@
     }
     25% {
       height: 25%;
-      top:25px;
+      top:25%;
     }
     50% {
-      top:50px;
+      top:50%;
       height: 30%;
     }
     75% {
-      top: 75px;
+      top: 75%;
       height: 30%;
     }
     100% {        
-      top:100px;
+      top:100%;
       height: 0;
     }
 }
