@@ -28,7 +28,7 @@
     letter-spacing: .2em;
 }
 .cover-container svg{
-    width: 120%;
+    width: 100%;
     position: absolute;
     bottom: -30%;
 }

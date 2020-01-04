@@ -7,7 +7,7 @@ const UpdatedComponent = (OriginalComponent) =>{
         useEffect(()=>{
             setTimeout(()=>{
                 setLoading(false)
-            },800)
+            },400)
         },[])
 
         return (

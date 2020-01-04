@@ -1,12 +1,12 @@
 .about-me{
-    height: 100vh;
+    margin-bottom: 10vh;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
-.about-me span{
+.about-me > span{
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-size: 1.2rem;
@@ -15,4 +15,24 @@
 .about-me img{
     width: 12%;
     margin: 2em;
+}
+.about-me p{
+    width: 50%;
+}
+.about-me-detail-container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    
+    align-items: center;
+}
+.about-me-detail-container p{
+    text-align: justify;
+    width: 100%;
+    margin: .5em 0;
+    font-style: italic;
+}
+
+#about-highlight{
+    font-weight: 600;
 }
