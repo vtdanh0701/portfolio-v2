@@ -14,16 +14,15 @@
 }
 .about-me img{
     width: 12%;
+    min-width: 100px;
     margin: 2em;
 }
-.about-me p{
-    width: 50%;
-}
+
 .about-me-detail-container{
     display: flex;
     flex-direction: column;
     width: 50%;
-    
+    min-width: 320px;
     align-items: center;
 }
 .about-me-detail-container p{
@@ -36,3 +35,4 @@
 #about-highlight{
     font-weight: 600;
 }
+
