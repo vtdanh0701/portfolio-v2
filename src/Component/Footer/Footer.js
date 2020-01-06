@@ -1,7 +1,6 @@
 import React from 'react';
 import './Footer.css'
-import {Link} from 'react-scroll';
-
+import {animateScroll} from 'react-scroll';
 
 
 const Footer = () => {
@@ -18,7 +17,9 @@ const Footer = () => {
                 <div><a href='https://www.linkedin.com/in/danh-vuong/' target='_blank' rel="noopener noreferrer"><i className="fab fa-linkedin"></i></a></div>
                 <div><a href='https://github.com/vtdanh0701' target='_blank' rel="noopener noreferrer"><i className="fab fa-github"></i></a></div>
             </div>
-            
+            <div className='go-up' onClick={()=>animateScroll.scrollToTop({duration:300})}>
+                <i className="fas fa-angle-double-up"></i>
+            </div>
         </div>
     )
 }
