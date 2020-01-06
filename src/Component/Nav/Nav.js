@@ -1,21 +1,45 @@
-import React from 'react';
+import React, {useState,useEffect} from 'react';
 import './Nav.css';
 import {NavLink} from 'react-router-dom';
-
+import BurgerMenu from './BurgerMenu'
 import Logo from '../../images/nav-logo.png'
 
 
 const Nav = () =>{
-    return (
+    const [scrolled,setScroll] = useState(false);
+    const [isToggled, setToggle] = useState(false);
+
+    const handleToggle = ()=>{
+        setToggle(isToggled === false ? true:false)
+    }
+
+    useEffect(()=>{
+        window.addEventListener('scroll', ()=>{
+            const isTop = window.scrollY < 60;
+        if(isTop !== true){
+            setScroll(true)
+        } else{
+            setScroll(false)
+        }
+        })
+        return 
+            window.removeEventListener('scroll')
         
-        <div className='nav-bar'>
+    })
+
+    return (
+        <div className={scrolled ? 'nav-bar scrolled' : 'nav-bar'}>
             <div className='logo'>
                 <img src={Logo} alt='DV'/>
             </div>
-            <div className='link-container'>
-                <NavLink to='/' exact activeClassName='active-link'>Home</NavLink>
-                <NavLink to='/about' exact activeClassName='active-link'>About</NavLink>
+            <div className={isToggled ? 'link-container show':'link-container' }>
+                <div className='animation-link'>
+                    <NavLink to='/' exact activeClassName='active-link'>Home</NavLink>
+                    <NavLink to='/about' exact activeClassName='active-link'>About</NavLink>
+                </div>
+              
             </div>
+            <BurgerMenu handleToggle={handleToggle} isToggled={isToggled}/>
         </div>
     )
    
