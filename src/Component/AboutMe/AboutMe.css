@@ -36,3 +36,8 @@
     font-weight: 600;
 }
 
+@media only screen and (max-width: 600px){
+    .about-me{
+        padding: 1em 0;
+    }
+}

@@ -31,7 +31,7 @@
 }
 @media only screen and (max-width: 600px){
     .project-container{
-        padding: 0 ;
+        padding: 1em 0 ;
         margin: 0;
         justify-content: center;
     }
@@ -42,5 +42,7 @@
     }
     .project-card{
         width: 100%;
+        margin: 10px 0;
+        border: 1px solid rgba(161, 161, 161, 0.692)
     }
   }
