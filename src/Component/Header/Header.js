@@ -14,6 +14,7 @@ const Header = ()=>{
             
             <div className='scroll-container'>
                 <Link to='project-container'
+                      offset={-45}
                       duration={500} 
                       smooth={true}>
                         <span>Scroll Down</span>
