@@ -44,7 +44,7 @@
 }
 .project-card:hover .detail .content{
   top: 50%;
-  transform: translateY(-40%);
+  transform: translateY(-45%);
 }
 
 .project-card .detail .content .title{
