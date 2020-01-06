@@ -1,6 +1,6 @@
 
 .page-header{
-    height: 80vh;
+    height: calc(75vh + 10rem);
     display: flex;
     justify-content: center;
     color: black;
@@ -18,7 +18,7 @@
 }
 
 .scroll-container{
-    bottom: 5%;
+    bottom: calc(5% + 1rem);
     height: 10vh;
     position: absolute;
     opacity: 0;
@@ -83,4 +83,10 @@
       top:100%;
       height: 0;
     }
+}
+@media only screen and (max-width: 600px){
+    .header-text{
+      font-size: 1.2rem;
+    }
+  
 }
