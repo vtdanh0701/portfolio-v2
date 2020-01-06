@@ -18,7 +18,7 @@
 }
 
 .scroll-container{
-    bottom: calc(5% + 1rem);
+    bottom: calc(5% + 4rem);
     height: 10vh;
     position: absolute;
     opacity: 0;

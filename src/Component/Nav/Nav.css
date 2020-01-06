@@ -8,7 +8,9 @@
     align-items: center;
     display: flex;
     box-sizing: border-box; 
-    justify-content: space-between;  
+    justify-content: space-between;
+    position: sticky;
+    top: 0
 }
 .link-container{
     min-width: 100px;
