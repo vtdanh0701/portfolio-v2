@@ -18,11 +18,7 @@ const Footer = () => {
                 <div><a href='https://www.linkedin.com/in/danh-vuong/' target='_blank' rel="noopener noreferrer"><i className="fab fa-linkedin"></i></a></div>
                 <div><a href='https://github.com/vtdanh0701' target='_blank' rel="noopener noreferrer"><i className="fab fa-github"></i></a></div>
             </div>
-            <div className='go-up'>
-                <Link to='nav-bar'
-                    smooth={true}
-                    duration={400}><i className="fas fa-angle-double-up"></i></Link>
-            </div>
+            
         </div>
     )
 }
