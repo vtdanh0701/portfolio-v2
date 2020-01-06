@@ -30,7 +30,7 @@ const Nav = () =>{
     return (
         <div className={scrolled ? 'nav-bar scrolled' : 'nav-bar'}>
             <div className='logo'>
-                <img src={Logo} alt='DV'/>
+                <NavLink to='/' exact><img src={Logo} alt='DV'/></NavLink>
             </div>
             <div className={isToggled ? 'link-container show':'link-container' }>
                 <div className='animation-link'>
