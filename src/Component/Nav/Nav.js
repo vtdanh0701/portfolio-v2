@@ -3,7 +3,7 @@ import './Nav.css';
 import {NavLink} from 'react-router-dom';
 import BurgerMenu from './BurgerMenu'
 import Logo from '../../images/nav-logo.png'
-
+import resume from '../../images/resume.pdf'
 
 const Nav = () =>{
     const [scrolled,setScroll] = useState(false);
@@ -36,6 +36,7 @@ const Nav = () =>{
                 <div className='animation-link'>
                     <NavLink to='/' exact activeClassName='active-link'>Home</NavLink>
                     <NavLink to='/about' exact activeClassName='active-link'>About</NavLink>
+                    <a href={resume} target='_blank'>Resume</a>
                 </div>
               
             </div>

@@ -7,6 +7,7 @@ import HomePage from './Page/HomePage';
 import AboutPage from './Page/AboutPage';
 
 
+
 function App() {
   return (
     <div className="App">
@@ -18,7 +19,6 @@ function App() {
         <Route path='/about'>
           <AboutPage/>
         </Route>
-     
       </Router>
     </div>
   );

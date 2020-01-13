@@ -22,6 +22,7 @@ const AboutPage = ({isLoading})=>{
                     <Footer/>
                 </div>}
                 
+                
         </div>
     )
 }
